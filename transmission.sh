@@ -16,7 +16,7 @@ dlSubtitles() {
 		extension=${f##*.}
 		if [ "$extension" = "mkv" ] && [ ! -f $filename.srt ]; then
 			echo "Dowloading subtitles : $f"
-			subliminal -m -l en -l fr $f
+			subliminal -l fr $f
 		fi
 	done
 	
